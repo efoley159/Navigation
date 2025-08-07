@@ -19,7 +19,8 @@ struct ContentView: View {
                 }
             }//end of Vstack
             .navigationTitle("Home")
-            
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarBackButtonHidden(true)
         }//end Navstack
         .padding()
     }
