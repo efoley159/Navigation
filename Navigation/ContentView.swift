@@ -12,10 +12,13 @@ struct ContentView: View {
         NavigationStack {
             VStack {
                 Text("This is the root view 🌳!")
-                NavigationLink(destination:Text ("You've arrived to the Second View!🎉🎉")) {
+                    .font(.title2)
+                NavigationLink(destination:SecondView()) {
                     Text ("Click Me")
+                    
                 }
             }//end of Vstack
+            .navigationTitle("Home")
             
         }//end Navstack
         .padding()
